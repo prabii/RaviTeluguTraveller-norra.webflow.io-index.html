@@ -220,7 +220,7 @@ td,
 th {
     padding: 0
 }
-
+/* 
 #wrapper {
 	display: -webkit-flex;
 	display: flex;
@@ -273,7 +273,7 @@ th {
 	filter: drop-shadow(0 0 3px black);
 	cursor: pointer;
 	pointer-events: all;
-}
+} */
 
 
 /* ==========================================================================
@@ -1108,7 +1108,7 @@ textarea.w-select {
         display: none !important
     }
     .w-col {
-        width: 100%
+        width: 83%
     }
     .w-col-tiny-1 {
         width: 8.33333333%
@@ -5414,6 +5414,9 @@ figcaption {
     h1 {
         font-size: 36px;
         line-height: 52px;
+    }
+    .w-col{
+        width: 83%;
     }
     .section {
         padding-right: 15px;
