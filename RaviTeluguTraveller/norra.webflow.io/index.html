@@ -23,6 +23,29 @@
             }
         });
     </script>
+    <script>
+        // Find the div element by its class
+          var divElement = document.querySelector(".blog-post-wrapper");
+
+       // Calculate the position to scroll to
+         var offsetTop = divElement.offsetTop;
+
+    // Scroll to the calculated position
+      window.scrollTo({
+      top: offsetTop,
+      behavior: 'smooth' // for smooth scrolling (optional)
+});
+
+function scrollToMyDiv() {
+    var divElement = document.querySelector(".blog-post-wrapper");
+    var offsetTop = divElement.offsetTop;
+    window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+    });
+}
+
+ </script>
     <style>
         .w-webflow-badge{
             display: none !important;
@@ -45,13 +68,12 @@
         <div class="navigation-wrapper"><a href="/" aria-current="page" class="logo-link w-nav-brand w--current"></a>
             <div
                 class="menu">
-                <nav role="navigation" class="navigation-items w-nav-menu"><a href="/about-us" class="navigation-item w-nav-link">About</a><a href="/features" class="navigation-item w-nav-link">Features</a><a href="/team" class="navigation-item w-nav-link">team</a><a href="/blog" class="navigation-item w-nav-link">Blog</a>
-                    <a
-                        href="/contact" class="navigation-item visable-on-mobile w-nav-link">Contact</a>
+                <nav role="navigation" class="navigation-items w-nav-menu"><a onclick="scrollToMyDiv()" class="navigation-item w-nav-link">About</a><a onclick="scrollToMyDiv()" class="navigation-item w-nav-link">Features</a><a onclick="scrollToMyDiv()" class="navigation-item w-nav-link">team</a><a onclick="scrollToMyDiv()" class="navigation-item w-nav-link">Blog</a>
+                    <a href="/contact" class="navigation-item visable-on-mobile w-nav-link">Contact</a>
                 </nav>
                 <div class="menu-button w-nav-button"><img src="https://uploads-ssl.webflow.com/63581d2d6f71d47f01fbd733/63878c091c9a002bb96b62f0_hamburger.svg" width="22" alt="" class="menu-icon" /></div>
         </div>
-        <a href="/contact" class="button contact-us-button w-inline-block">
+        <a onclick="scrollToMyDiv()" class="button contact-us-button w-inline-block">
             <div>Contact us</div>
         </a>
     </div>
@@ -59,7 +81,7 @@
     <div class="section zero-padding">
         <div class="intro-header">
             <div class="main-image-wrapper">
-                <img src="../raviimages/snapinsta (18).png" loading="lazy" data-w-id="0c502670-cdc0-cb9c-21e3-7d0a4fd6ba49" alt="Norra alt text." srcset="raviimages/snapinsta (13).jpeg 500w,raviimages/snapinsta (18).jpeg  800w, raviimages/snapinsta (11).jpeg 1080w, raviimages/snapinsta (24).jpeg 1600w, raviimages/snapinsta (24).jpeg 2000w"
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHe4Hj1zrbPweeYUvHQMDARLcD35lJM7w9KA-AufwjOt18GJCA_ibEk5ZhCFSWUIfR-S2milDl-cu6fES-vE2Y_4AaJUcU2kd5TqkeMXc6kawoJKdpkC=w2400" loading="lazy" data-w-id="0c502670-cdc0-cb9c-21e3-7d0a4fd6ba49" alt="Norra alt text." srcset="raviimages/snapinsta (13).jpeg 500w,raviimages/snapinsta (18).jpeg  800w, raviimages/snapinsta (11).jpeg 1080w, raviimages/snapinsta (24).jpeg 1600w, raviimages/snapinsta (24).jpeg 2000w"
                     sizes="100vw" class="main-image" /></div>
             <div data-w-id="86e64837-0616-515b-4568-76c147234d1f" class="intro-content content-wrapper-homepage">
                 <div class="intro-text">
@@ -71,7 +93,7 @@
             <div class="gallery-button-wrapper">
                 <div data-w-id="a66938c3-eda8-f4d8-f8d6-b52e039f1986" class="photo-gallery-button">
                     <a href="#" class="w-inline-block w-lightbox">
-                        <div class="avatar-div-block"><img src="../raviimages/snapinsta (22).jpeg" loading="lazy" alt="Norra alt text." class="button-avatar" /></div>
+                        <div class="avatar-div-block"><img src="https://lh3.googleusercontent.com/pw/ADCreHeEGV3Jz_KqLMcrbju1qWStElWpNBz0VRg08iq6_5L6kAoZKhoeY_qxgL0iusF8DNUHPmOmWKVqCUBt4AMGPgwGIt_oMn4ukedFaJ9WVaoehdR9zUM6=w2400" loading="lazy" alt="Norra alt text." class="button-avatar" /></div>
                         <script type="application/json"
                             class="w-json">
                             {
@@ -81,7 +103,7 @@
                                         "fileName": "pexels-kindel-media-8979679.webp",
                                         "fileSize": 288050,
                                         "height": 3022,
-                                        "url": "https://lh3.googleusercontent.com/pw/ADCreHcHBRC8WMcP3prM2SIiAs3dqqR3LoZ87gxUJxoQ0SFMEaIINVBfBGaFdkRsVjY1LsMxOlMlKTk2wt6OGOtYAvTBXuQ7XMlEEcBHim7hkta6kLs9sJfN6basnVvxMowz5m-gLCBus6G9EObhnhgGyCk9lIPdJbGWAVKJndHAhkoyNJFXzERkNxJF90pvDXEZydeMTt9nQQkCb8DT7mua_3oeZiJLZwaSfYv885vQtPPZSlCT88sOXHkTFkFete49Fxj07yc7NreWp3JoZPznX5E4i6mgpWFcDK4ntXE7Jbl3pT_vb3mjjCrDBH-OLpvjBimRb68nLqmInd4Bbp8-5jNffXWkW8pYGIm_ckn3O2PW5rK-BZKgAP5fL3X8jZuV1EqMuHbtk33MsUr7ufnfC7wwXNr-eBoQ33I2daCv7GbmGdTPaO7HTG6OVOIrHN5xAAkb-YQmcpD0X2WIg2nsxa9QeGsSWn2NXXQG0RHRfcYK7sUA2V1QaZPxkHl4CBp-tJi7K4-eDH2IUrWJKPA3OhQvYglFqKBPjfzmrPwi12btm3sEC7M6oFjy3IMB2KwTMJIrRfF2KiBYhHBzFzArvhV-0sK0OtuoCq0ZwLZIbdI_aNznaCTxNoq4J_cH-5oFXpTbiv9vjb1TOuPKi8NX3hk86cbketo4Ap5--1BpVBIjxsq_vyN8xRvfrXMvuRc-eAK6vRIFY8jGCYcz-yr6wsei36df-WFUOWUzRfTwglAnSavAH1exPa7xH1q39snjzV0dQqW4CGv2qHC0B8-gD54fpFocju5QU8az6mWx2RF4JUiwGCL8-P_mllm9V4Z8sMZqMT9kFgiD2BX-ryXjGzGLrddJbgu3V-p-NnXdnXhgtTL2FMQQYCd-IccZMVeEzYRKCn3YZZtkn6MFR4l3wg=w640-h765-s-no?authuser=0",
+                                        "url": "https://lh3.googleusercontent.com/pw/ADCreHf62i7n8fQWRbyaQXvHuc0wjc2fc2x6JsrXxxAW4LB6ExXnSzWT-WMoqVHwF1xl5TXqxUsYy9_YD6G8UlmrslqX-wTtqCl28YbGAoPhIAcml1auNXSR=w2400",
                                         "width": 4030,
                                         "type": "image"
                                     },
@@ -101,7 +123,7 @@
                                         "fileName": "pexels-chaly-al-vito-1524414.webp",
                                         "fileSize": 216078,
                                         "height": 3520,
-                                        "url": "https://lh3.googleusercontent.com/pw/ADCreHf_lNbwmUN4IedpJnp3OqAmXx9x69hVdqlhMCVPfUfRzgX2afFTvPM8P1UCgdhWkaA462pcsLBPBUne7akAvf8-CrJ0-IqwTuae1ZW3omPT0osNqiKJ36iRunh9i7NyaYlPQHnDwK-WUMpK3NHx94H5n3mlsJjQ6W4TmbToKhZeSdPtnDXcZ9us1N_5jYTlvhhnnWkEa0rDztaRfpqkAwJRuaQ-VnGDRwC7D2PSX3q__4GlVAIVAkpNJQpcyTsIWpE5HKdV15bp4jwT1zQvzmH0kjqje3sxtcCDZEkIuoOPWOl7xKtJ1NxSPDZG4i54d1TegrzKpHXDy8LBgCx1_iHcJmfywFe_PPA1A5FcZAzHrxo3UwdIr6z0p9S-Q3mDDLNYI3wNlforZEocHXoOuLqd9K3XJOXAOqOsh8iXFX_D4oSqnIjORdiLE1v5a19ujP6hTeuprjNLIxTAG-hlKmkXqWmfTKtIncdeQF0yEojYZDLl_3bJtoqj3koYVubS5s932xgIN8ja_3N7_bYxT2lW6bNoImqjQ3YdISFLU7WPXgjBblDv82_8FxomZXPlUv-IKEN3oOxHq2KPoKGCz5vAQ4bHac0EsAtmphRlUVeijs8hJ4e9lN_SLKAxogC4HqUBHs-YSgr1uYBQ-tYLhk3FC9Zk2uxqm00cGegiKxjFq07mxFv8L4yCoT6Q2k95Dn4U8eSQr6kqd4xUajsRZw7irMyLbElNIntQgC2HvRgQQXQDC_G0eFOo70BaT4zE3s8vc6272Zmic-LvTvH22aYy-s01X0-Dr0ZxJtvmxZnYIHk7d2XP9Ps5Aq0EHhHnmzXbycD0a7OoV4i5FKsfLc3jV39Mm2JzVB6iEQldwcJDGxGRkHg_aunY0du9wopNIovMTFgAlFS4JxCZoxyEGQ=w640-h798-s-no?authuser=0",
+                                        "url": "https://lh3.googleusercontent.com/pw/ADCreHeEp0PItcplfyEyfIcmNppQs1ar0S055uqI3sHzhFImd7ZmjGZMvT0wlWTEokpoWPB9q6GJ_j7R2irInXWXf6RtJqpFsXFDdrXJheqODAtsOBjQGApQ=w2400 ",
                                         "width": 3520,
                                         "type": "image"
                                     },
@@ -111,7 +133,7 @@
                                         "fileName": "pexels-jeremy-del-rosario-1881062.webp",
                                         "fileSize": 283358,
                                         "height": 4752,
-                                        "url": "https://lh3.googleusercontent.com/pw/ADCreHcfKrWJh6RjyMjEFfDpy73-PNRy4QQ62wOJYC-yQ0SKyifZlWP667Yfqp1otEk-IdPiVD6KOdLkusBt5ujToI3TpgbZaC1Kqz_aNJOnt4KAFbuWRFQ2j4ESWikqZ0IL9kV0_wOZBz1bvjw0PUhc8NwiPK-T1LQkXGshjzbO9QszNgt4BROtGI_jXTEB_OWdb2p6iILpmZZTaXZKxkTI1aPAoKxb-koyuafPS4tc5a6cWtHIhnXHhzOhdm1zSbbhWCBrK53dbgkntX7WOrw1S_hFOFfXbQE2arWElHq-pL90Y4Zv2dmmJ3CVZ6AgiKd4NHYChbLRX_utGfFpPfIWVQUCz4cr9bedRW4Q16-rl94aZXZidnqOMqefbUFmBhXAjE2uASJPR_16Ev9XaZfp2SB_u5K8egzhFWPuK8p3S6S2Ix2kstEyATZPVlAqK_WM__fv-w-Y80xSBB0Xbi-0AHbp6qAAb98Wx3vwLreM7HstprE627DeeHs1rcb5MPqcsmKis0theSqetTewRaQE77ya3dxA9xfsZTfQAziiRx9vAbFZLcpxXN_xXlWPfWVfAVj1v5HYDTTUyu4GFDMDb-GsmYkqOMBGSTX9f07zPB2Kjc5qbb3B5ijoO3sAh6AtHItvo3-pv4_j3EHgQTdoRE2Njn4HhW1LmuYDjRtozDUZ0Aiyv4rRDn6xwPSiUDzL3FJol3yNqSe0R8N5XDfscxdy4JGRifXmGN7c20Wa4YQPMnJIviHP3fO1VaOiORBL8zS-TRP7_X0449yFU8kkvMECh8K7qel9lJ0eYfsK4MWCH_8AG4HhJn-p0xGIbUaLHtKO97WXW5A8qMLlqIpIFDaV8jJgnNE2idv2tTESOndxiNB694RtfJnMmaPmRw-Bw62MTGGAjm4oQWvXffxvvg=w640-h727-s-no?authuser=0",
+                                        "url": "https://lh3.googleusercontent.com/pw/ADCreHfwggrU00Rzx6C9KCEMtYXfiolI--5OmqliqFPJVhzRmjEnbHcJsYjXLpBqffXeEmmQmpjloBF0p6ZmLgyL0Uula6Ff3nMi2kSKlChr8l_V_K5VGvnP=w2400",
                                         "width": 3168,
                                         "type": "image"
                                     },
@@ -121,7 +143,7 @@
                                         "fileName": "pexels-jeremy-del-rosario-1881062.webp",
                                         "fileSize": 283358,
                                         "height": 4752,
-                                        "url": "https://lh3.googleusercontent.com/pw/ADCreHd3ijuzfMJ0gsWumeq82nFM59ABNDIMfpEcJyRRab0eQu6c2VgmTUfxQfNbfl-GoeSxMdT-UBkvKQgl_suVEj9TIJtgrbU1q4XZ86ctjenh5QKNaZClsEnvAcF842yGxts17C--XaQw1TUXRT0l7ptNx1pW_YmEOdqyoVUe09EuKtD3ZPhRWH4UcKxFnIwWA-MC46Ch7TMgHPDjwvRF_GS9z_1TI81JTe4bwRW23GMVe2S_gWyvZfRLTL87LyTVM4SU0mxYQkjRsjn1Gih2aRAmhWg6IC_sViekdDSVjRYsafHZZPHOxOl_d_HkIjnRdjP9_qFFzf5lrexMYWUEp-_2rSAhAOxsm-8Vgw-tEORy9mdV9wsQop_Gml5Dw7vsBlb1eJepsbfl97GHq37SHerimylit3FmTNl2ylyVejhxDrmXJICZ-ZGY1qnLEVkBE7-xFL9L1hDjnbjDkmsdw2BE_vhMu9FGKCfdPkyjYxV-N3JJK1Sio1k2H09Bctd1lFUggDAy4Y36UP6AIsx9nC5UyFYep7-XZ_o3zASqTQpLSFMV5dOFg9fIZgS-_3q9EW_A61FGZoCS6Xt8BpiRb6RgIBlwe09X3wPmXrXUlrv1tzoqWgMpEiByIJYeSqkoXpWFKp8W5qgfJe8w7PHh7OGWmk9jGa-6hK5GdaZVdamJbjR48j142tsB3oUSYFRrZ-06cXuzlAu2G_REsmkx1uySdGkqxtPHoez-9h6OBYvLpUP8YK7A-xrx5jfJ4KwKUtzJoJPVXDc0q39o6olSVZFkilzJH-0prRpzpMxyDCxaHd2bBVJJXO9-cQBRyhLCHyctAYM5jKWQvRhsvD7blx2t1oxTIQ1E0W-UHK_Cf7fttIjw9f_OlrudziVfr_FltuhJQ61CWNgZ2Qlc0pGcqg=w640-h800-s-no?authuser=0",
+                                        "url": "https://lh3.googleusercontent.com/pw/ADCreHco9WsQZRxT21qRGjoOgoJ_Hok-xggQJz4Jzxzb_lMhkRDEGh6zRmd9jg33crss2yjmPPdyNhPVQbIs0vNjjJfcDVuZcUBTPCJrZw2_pUFjZ49-1GQo=w2400",
                                         "width": 3168,
                                         "type": "image"
                                     },
@@ -132,12 +154,12 @@
                                         "fileName": "pexels-amine-m'siouri-2245436.jpg",
                                         "fileSize": 231359,
                                         "height": 150,
-                                        "url": "https://lh3.googleusercontent.com/pw/ADCreHexopxJdVShghkgnZoiZ0YFnzcoXW_cL3oe_QiJsKp7taVWa2BGzswtDfqvEAfuiZsR-GP5mkRaXN8DRkd5OT-RAQhrNv5zeSQ0RolIRif95uOMUNOlbWg7n-2c95r5t-eiDR_-viyQ-zHcScljSvDBzE7hh8EO4L4D6sCpY2DOIT4tjGJEYCl9B0mQt2RLo9-Dnj64mg5XEpNZW4Yw3jvAAb9X3w4SoJhbybEHB-v4cgHxL4BfQfFUyEftwIyUljJqVVlIMcfgWEUgYmWpil3D89KMexWztC-48Fs3Vw1RoHDw0GIco1iROuDkg3zsAy-4cv_nP2GvaK9HsDOqmRTBomYGX8e7p7HgWlWgJyKRpqIeW3cjHs_qgGIo4yHLQ3FEnTbS66PcSboakY4cix67Xc15j_w5La3JIIzwOLMu7mtKAlpvFHhP2GNLcmS254D5ygYga0RU2ZmJdWP28bBhABeZx9CTV1-XcbusYoKUls3UXrfxfbBT76MAdP4UC-a5Syj1chltZ-WRaNw8eY892VTtevYRB5eIsU1H1nvLVJtp7OlAp7qeiTI1tVWwpBU8qQ1srIndQg_cAF2qWjQyB1yHTHgIsMMdlDXbwUauq-75osaRfza7IKo1O7vdfbcCoUaOdjUfeoV2CeWlakKzOTSZ6iuwtb4Z0xJwc4Sz9oJqOPmYsqDKXWFUDmh5hNlJbaD0PezsULdvb6NBgES3BDKik1CqjDz_xldelSkBtNrdIAwJ1HLdE6Kj9BHX4W3Dmc6bMgrAog9fbe9e5SKX6MTe4nrMt4dPS6QVHtKimoX7VyxnSXO5katoRp_57xJgxJo30l5PapFFEvQ8p3rCvRs3D31doayyIXCxsI6dNa8t6Mjpuy6z-XzqdyDXcu6Ln8NuoOm7dhc45kE09g=w640-h472-s-no?authuser=0",
+                                        "url": "https://lh3.googleusercontent.com/pw/ADCreHeG5yXRgXXhxRgdM5xRCxu7zTmhM5768ef3ZJ8jFPOCaq7RY_PBEjzmcjCAg1SLCXnaQlMKFNmyaFaEu3Tou_XVi35pJf9z2TX4tS8oOt9eM7FuGEvJ=w2400",
                                         "width": 150,
                                         "type": "image"
                                     },
                                     {
-                                        "url": "https://lh3.googleusercontent.com/pw/ADCreHc1AC4GXeQPIhz78RjqB3jitUaCiqcUxbxPUrmquhDm1XN_c_uW5RY9tLeTF_56C2gKp3VwYuHimbIJiEgub9BExsG07YyfzUYOHkO-0CL7lqIoOYyYQ3c5zl4aq12JlXMYpZ-Hciz0YGdoGCFn21QTYgXZvV4TVFneU82fHQBa67zb2TGTJ9NjuSUb_19as67gFmIMvB3PDcgT1EH6ItOsdeXRI3tD2Y9RHR-fzkNGV1i6r-UT_9piS2fu5kjoevVQxnUi-Q2kNPSHX7b7lhSYAZMg2yH1hlUSn7_bbh6g3_qPtEqa15B_-FbjJJegcIXkahwBzbHEVqkD_SJUBWlv3UsWdHyfuc7wOFYeBi2TiMzm-yysYHnYT_aQTan669-90L4BZcXRzo-qmptkQ4LgAAfPam2cqu0QQSFBWPlwa0IH-DXTB9URa2lispnPMIGgX11WChxDiQQ6ajzswnASKNTqGBc1ONVcm8TMxvaO6x_RChukPk5-LtdZjzqIOcSS4VcH75p-xdfQjDX3OaXQ-QmDK_TdOZu9V7kA5M7Sd4x60daIUbvmFEqLU75fiNFE7yqe_Yi7SqSjJw4ayOLDYvSGwH-47uSd51vdeyO5PMk6YGl_K0CLow4RcDwVkrWAOuD-nfqZQdj-pDSL5ht8rBSrRGTUrHMS8V2GFOnqzRxvs7kz1xtnZLettXQ3sLdyHdg04fGdhCFts1l163FiVIbNYSveSICbXr9pbqk4K5WL470WapoS686rqgKSFk-L1REVa-9UWwP8W-9e9MKa2RIWjxCNbBSri25ir4B0jn1cyGVtK_l1xpf_zH1AKqtiABRMQyEpIWQl5osyn3ELsGor818UWSDjS7QAFzhRqNkc-vx9g5kZBtxI-_X80AlrqjyGmg4tkacr8x7YhQ=w640-h800-s-no?authuser=0",
+                                        "url": "https://lh3.googleusercontent.com/pw/ADCreHfToJzUqZHawyfoa8D-s1_ixdkpzsLswgnuFm0eIsB0dE7CrNNStk-AtlAzpyoANnJ0OayWvaacuGgL3n9-cQXv2L-G1FyZSYuvid1VQkdjeIoKkJ48=w2400",
                                         "width": 2986,
                                         "type": "image"
                                     }
@@ -157,8 +179,8 @@
                 <div class="label bright">HOW it started?</div>
                 <h2 class="heading h2">About Me</h2>
             </div>
-            <div class="animated-images-wrapper"><img src="../raviimages/snapinsta (25).jpeg" loading="lazy" data-w-id="6caa7dee-0eb7-e404-dd33-ed946362ceca" alt="Norra alt text." class="animated-image-left"
-                /><img src="../raviimages/snapinsta (20).jpeg" loading="lazy" alt="Norra alt text." class="animated-image-center" /><img src="../raviimages/snapinsta (13).jpeg"
+            <div class="animated-images-wrapper"><img src="https://lh3.googleusercontent.com/pw/ADCreHez53k7sX5mjLdfaHAV8Xckm7PBA0eZ4Xiy_Z8sfuCWcsE5FDgN1hh5rbXFCUxP83zRl11YXO8GVfh9tw-cOOF32BRWIg9-KKie4wk9akcOVkiAguob=w2400" loading="lazy" data-w-id="6caa7dee-0eb7-e404-dd33-ed946362ceca" alt="Norra alt text." class="animated-image-left"
+                /><img src="https://lh3.googleusercontent.com/pw/ADCreHfH_6iq6n6LXE-lDzkgWgL0A7b_5GTKI2gfrKeubuK0NFO5uv3RMjeN7kxY73FsibXfnp6aUul37mOiwAm-LYJ7-6XBGI5ovseDG3uSQGGy6-MmcXST=w2400" loading="lazy" alt="Norra alt text." class="animated-image-center" /><img src="https://lh3.googleusercontent.com/pw/ADCreHcHUVLdwy0ZRGSXgjBIDpYSodTR8rgCTiloHvAtl8iCA-Hz9sB1jGB3cXL3HtmEuX0lan5UpthvIiEA0fNSDnVsKtUn5waQDmaSb7N5MzNjiBZNplRX=w2400"
                     loading="lazy" data-w-id="6caa7dee-0eb7-e404-dd33-ed946362cecc" alt="Norra alt text." class="animated-image-right" /></div>
             <div class="w-layout-grid about-us-grid">
                 <div id="w-node-_6caa7dee-0eb7-e404-dd33-ed946362cecf-daac10be" data-w-id="6caa7dee-0eb7-e404-dd33-ed946362cecf" class="about-us-wrapper"><img src="https://uploads-ssl.webflow.com/63581d2d6f71d47f01fbd733/63623200f063281bfd0686c6_maps.svg" loading="lazy" alt="" class="about-us-icon" />
@@ -166,21 +188,21 @@
                         <h3 class="heading h3">Impressive <br/>adventures</h3>
                     </div>
                     <div class="margin-30px"></div>
-                    <div class="paragraph-small">Me travel thousands of kilometers around the world to find the best places to spend time. </div>
+                    <div class="paragraph-small">Ist Indo-American Telugu Traveller to travel around 194 countries out of 195. Soon on a mission to complete the 195th country </div>
                 </div>
                 <div id="w-node-_6caa7dee-0eb7-e404-dd33-ed946362ced7-daac10be" data-w-id="6caa7dee-0eb7-e404-dd33-ed946362ced7" class="about-us-wrapper"><img src="https://uploads-ssl.webflow.com/63581d2d6f71d47f01fbd733/6362382266f43b5a7c96db3c_exercise.svg" loading="lazy" alt="" class="about-us-icon" />
                     <div class="orange-heading-wrapper">
                         <h3 class="heading h3">Experience <br/>complete rest</h3>
                     </div>
                     <div class="margin-30px"></div>
-                    <div class="paragraph-small">We help you relax, because we know that it is not easy if you live in complete shame on a daily basis.</div>
+                    <div class="paragraph-small">Some people I met in India talked about popular travel vloggers, and I realised they have not travelled as extensively as I did. That was when the thought of vlogging came to my mind</div>
                 </div>
                 <div id="w-node-_6caa7dee-0eb7-e404-dd33-ed946362cedf-daac10be" data-w-id="6caa7dee-0eb7-e404-dd33-ed946362cedf" class="about-us-wrapper"><img src="https://uploads-ssl.webflow.com/63581d2d6f71d47f01fbd733/636239aaea8a4f49d4b391ca_visibility.svg" loading="lazy" alt="" class="about-us-icon" />
                     <div class="orange-heading-wrapper">
                         <h3 class="heading h3">Notice the <br/>imperceptible</h3>
                     </div>
                     <div class="margin-30px"></div>
-                    <div class="paragraph-small">It is easier to focus on the world around you when you don&#x27;t have to think about anything, because we will plan the entire trip for you.</div>
+                    <div class="paragraph-small">Growing up, Salman Khan had been my role model, and I started gyming in 2007. I’ve been consistent with my fitness regime, watching what I eat. Getting the body is the simple part; maintaining it is difficult and needs consistency</div>
                 </div>
             </div>
         </div>
@@ -204,9 +226,8 @@
                                     <h3 class="heading h3">Intense flavors &amp; blissful peace</h3>
                                 </div>
                                 <div class="margin-30px"></div>
-                                <div class="paragraph-extra-small">This quam quae perferendis harum amet dolorum possimus minus.</div>
                                 <div class="margin-30px"></div>
-                                <a href="/post/intense-flavors-blissful-peace" class="button transparent-white w-inline-block">
+                                <a href="https://instagram.com/soaringeagletrots?igshid=MzRlODBiNWFlZA==" class="button transparent-white w-inline-block">
                                     <div>Discover</div>
                                 </a>
                             </div>
@@ -223,9 +244,9 @@
                                     <h3 class="heading h3">A fresh look at the world</h3>
                                 </div>
                                 <div class="margin-30px"></div>
-                                <div class="paragraph-extra-small">This quam quae perferendis harum amet dolorum possimus minus. Occaecati magnam animi quasi dolor quae et aut. Autem voluptas alias nobis in odit.</div>
+                                <div class="paragraph-extra-small"></div>
                                 <div class="margin-30px"></div>
-                                <a href="/post/a-fresh-look-at-the-world" class="button transparent-white w-inline-block">
+                                <a href="https://instagram.com/soaringeagletrots?igshid=MzRlODBiNWFlZA==" class="button transparent-white w-inline-block">
                                     <div>Discover</div>
                                 </a>
                             </div>
@@ -244,9 +265,9 @@ Autem voluptas alias nobis in odit." loading="lazy" data-w-id="42d533b0-c21f-828
                                     <h3 class="heading h3">Clean water &amp; fresh air</h3>
                                 </div>
                                 <div class="margin-30px"></div>
-                                <div class="paragraph-extra-small">This quam quae perferendis harum amet dolorum possimus minus. Occaecati magnam animi quasi dolor quae et aut. Autem voluptas alias nobis in odit.</div>
+                                <div class="paragraph-extra-small"></div>
                                 <div class="margin-30px"></div>
-                                <a href="/post/clean-water-fresh-air" class="button transparent-white w-inline-block">
+                                <a href="https://instagram.com/soaringeagletrots?igshid=MzRlODBiNWFlZA==" class="button transparent-white w-inline-block">
                                     <div>Discover</div>
                                 </a>
                             </div>
@@ -265,9 +286,9 @@ Autem voluptas alias nobis in odit." loading="lazy" data-w-id="42d533b0-c21f-828
                                     <h3 class="heading h3">Losing yourself in the desert</h3>
                                 </div>
                                 <div class="margin-30px"></div>
-                                <div class="paragraph-extra-small">This quam quae perferendis harum amet dolorum possimus minus. Occaecati magnam animi quasi dolor quae et aut. Autem voluptas alias nobis in odit. </div>
+                                <div class="paragraph-extra-small"></div>
                                 <div class="margin-30px"></div>
-                                <a href="/post/losing-yourself" class="button transparent-white w-inline-block">
+                                <a href="https://instagram.com/soaringeagletrots?igshid=MzRlODBiNWFlZA==" class="button transparent-white w-inline-block">
                                     <div>Discover</div>
                                 </a>
                             </div>
@@ -290,13 +311,71 @@ Autem voluptas alias nobis in odit." loading="lazy" data-w-id="42d533b0-c21f-828
             });
 
             var photos = [
-                // Add India (Andhra Pradesh)
-                { location: { lat: 15.9129, lng: 79.7400 }, src: 'https://blog.redbus.in/wp-content/uploads/2022/02/shutterstock_518570896.jpg', link: 'https://youtu.be/EnOM71xYAFc?si=qVJ2iNFdZDCmogI7' },
-                // Add Dallas
-                { location: { lat: 32.7767, lng: -96.7970 }, src: 'https://i.natgeofe.com/n/c984bec9-d0fa-4861-a353-014a1e908e34/dallas-travel_4x3.jpg', link: 'https://www.example.com/dallas' },
-                // Add Japan
-                { location: { lat: 36.2048, lng: 138.2529 }, src: 'https://www.state.gov/wp-content/uploads/2019/04/Japan-2107x1406.jpg', link: 'https://www.example.com/japan' }
-            ];
+    // Add India (Andhra Pradesh)
+    { location: { lat: 13.6288, lng: 79.4192 }, src: 'https://lh3.googleusercontent.com/pw/ADCreHe8IULOV6St9zO97YKeNBPVrHt6yTFk5nm6gMpdIDrMO7d51u_m6JvUGjk0ivglcqSz4hBilKaOampNf4ot8OllGWtvaFVm3sqOou71r_9fLv8qJf0F=w2400', link: 'https://youtu.be/pNPfZMiWBpk?si=AGyw6-kvrtyXZpZq' },
+    // Add New York
+    { location: { lat: 40.7128, lng: -74.0060 }, src: 'https://lh3.googleusercontent.com/pw/ADCreHe-H7zQMHKeLAEDh7IxETJJfqXuEDxjd7SX9pEgGnYENyAhJ3EkFPbHl74Sv9f_iFT4ByEbxbGEJoNIz9Q_BhvEgIlumWv-rrp62HXjdMjHkeFqJJjW=w2400', link: 'https://youtu.be/WzOiBNhnJ2c?si=D8SEP7rgvkzyhMcF' },
+    // Add Korea
+    { location: { lat: 36.7783, lng: 127.9835 }, src: 'https://lh3.googleusercontent.com/pw/ADCreHc2VGUDNU8DOiIhngTGCTugBvOGBONqpWaIpHQj2mflAXzUZYfT2f1VrlL10BvxSWKFLi0FW-DA1l5yle1n5nCgcxulby5sCIu3Zi9NY2I4IXBFRMh4=w2400', link: 'https://youtu.be/x-Eis7qKPSs?si=VVBZAZm8kFAykyQL' },
+    // Add Africa
+    { location: { lat: -8.7832, lng: 34.5085 }, src: 'https://lh3.googleusercontent.com/pw/ADCreHd1fCfCwMZwKlq6EsbJ6IWkXQ_aj7Z7PzjomXqAiT5KG_5B9pQ75EKCETP0Uu-TDadMzP7WkgGAvZeHiRWgyee9BWe3OfWAV0KKAPwlKmZljYZrHBtN=w2400', link: 'https://youtu.be/OzfvpTEQNwA?si=XFMoaMzqDx0e4a0F' },
+    // Add Israel
+    { location: { lat: 31.0461, lng: 34.8516 }, src: 'https://lh3.googleusercontent.com/pw/ADCreHc_qWxUdWveYs9ZelRCzyGvw4k4M2qibi7RKkGH5zztKl783GpHuix8yTbAKH6fggO3a4C74KOKczvTOpsIxSGneJjGFssqqgrmyXMZQsa7-t12juJJ=w2400', link: 'https://youtu.be/CNyhIITk5F4?si=9iwmsoRtiSzFB84F' },
+    // Add Sri Lanka
+    { location: { lat: 7.8731, lng: 80.7718 }, src: 'https://lh3.googleusercontent.com/pw/ADCreHfE_QQaW9MM_9R1S5WlTDx5ti0qX3oHG9qj0JzDrt5KWy6ezLB7UJXU9uvRbN_SOe-ciJ2jLh4q4XowxgvCBPlDGRXLbAuFADxiN-UnUa4Fjd4cQb5C=w2400', link: 'https://youtu.be/4jkuvu9v8rk?si=wsUaNrkViKIbof5u' },
+    // Add Alaska
+    { location: { lat: 64.2008, lng: -149.4937 }, src: 'https://www.travelalaska.com/sites/default/files/2022-01/Haida-GlacierBay-GettyImages-1147753605.jpg', link: 'https://youtu.be/o29JjKH0iIE?si=0sahe0BMwHT9Rt3s' },
+    // Add Arctic
+    { location: { lat: 90.0, lng: 135.0 }, src: 'https://lh3.googleusercontent.com/pw/ADCreHfzg5hnwqzPA6-TBryZBexiHSQiysoZuVpsAL0pvAPJtXzKSyBxJ2Qs-2zyfxWRP-qog5o_wueOgqtsl3Z6E6Utnik8FfvG7cPKa4Epl7mPvtPXEaJt=w2400', link: 'https://youtu.be/FgFCS2MfQxk?si=UBLTHhOusD6_Nlv8' },
+    // Add Nauru
+    { location: { lat: -0.5228, lng: 166.9315 }, src: 'https://lh3.googleusercontent.com/pw/ADCreHfUQmU-bcfd37IgrkIq8gcf2p26YFuoSuTiV7825MWc0Mc-wU4BA3I0a6_QujgDpq_YYo_4mm5HLEBP2klsLY-NjDclQvLha4fCysBB2VhJ-GZlyTGZ=w2400', link: ' https://youtu.be/nYBmog_Qe_M?si=_1xyrQvs7cqmiJwV' },
+    // Add Libya
+    { location: { lat: 26.3351, lng: 17.2283 }, src: 'https://lh3.googleusercontent.com/pw/ADCreHddqV9hoaxyxUc_imhDG-2VY-53CweVobnyEpCdkRrrjrRuw45xEm5nu4iRGII5AnTukvSFzLMjNBnVIbtdd3fuoLTt8rzecqlTmR_NgG4NNZ4bO6E6=w2400', link: 'https://youtu.be/3OgNyfQOB7g?si=8WAEeVyDheADKBD-' },
+    // Add Canada
+    { location: { lat: 56.1304, lng: -106.3468 }, src: 'https://assets-news.housing.com/news/wp-content/uploads/2022/10/07122140/Canada-tourist-places-to-visit.jpg', link: 'https://youtu.be/Hok6gGAaFDs?si=S8ViTpM8s6cx0wWz' },
+    // Add Bangkok
+    { location: { lat: 13.7563, lng: 100.5018 }, src: 'https://img.veenaworld.com/wp-content/uploads/2022/01/Bangkok-scaled-e1643370774488.jpg', link: 'https://youtu.be/Ews4-q0vm6E?si=8iXri-m8R7iEv3lx' },
+    // Add Iran
+    { location: { lat: 32.4279, lng: 53.6880 }, src: 'https://lh3.googleusercontent.com/pw/ADCreHdrvP0hXcjdacITgbCbX3wjvRdQ2RoTvxCTIzknXN3ZDnSRH5b-hYmhaJnyhqmjxyVRZCJvx-8wq_9MxZKTXlTLOiMtofjE3VDjgdd-LcRJg_FlMYKA=w2400', link: 'https://youtu.be/PT5DOrhtAb0?si=PcHkGxUv5cykovoC' },
+    // Add Dubai
+    { location: { lat: 25.276987, lng: 55.296249 }, src: 'https://mediaoffice.ae/-/media/2023/august/06-08/06/dubai-marina.jpg?h=1692&w=2189&hash=1B137ECC562F8C7440EC461FA3F8B2F9', link: 'https://youtu.be/iLrepA47iWo?si=nfC5mGAZd-uFZP8Z' },
+    // Add Germany
+    { location: { lat: 51.1657, lng: 10.4515 }, src: 'https://media.cntraveler.com/photos/62d829cfc8f4ffe12646981d/3:2/w_7359,h_4906,c_limit/Rothenburg%20ob%20der%20Tauber,%20Germany_roman-kraft-g_gwdpsCVAY-unsplash.jpg', link: 'https://youtu.be/k6VA9Dv4ffk?si=ZnFjNjh5K2PxDh73' },
+    // Add Europe
+    { location: { lat: 51.9194, lng: 19.1451 }, src: 'https://www.studentuniverse.com/blog/wp-content/uploads/2021/06/eu-feat.jpg', link: 'https://youtu.be/tLHbCM7HCKA?si=5m_loHaTNK7DwYLJ' },
+    // Add New Zealand
+    { location: { lat: -40.9006, lng: 174.8860 }, src: 'https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/new-zealand.jpg', link: 'https://youtu.be/SPxt8z9VoVs?si=DZXi2Hw5PDlhMz_i' },
+    // Add australia
+    { location: { lat: -25.2744, lng: 133.7751 }, src: 'https://assets.cntraveller.in/photos/622b3fdc652e69e3c9cd5372/16:9/w_1024%2Cc_limit/caleb-russell-JmuyB_LibRo-unsplash.jpg', link: 'https://youtu.be/cT4CCuMmiF8?si=I5gKMVzUFnfRfFEx' },
+     // Washington D.C.
+     { location: { lat: 38.8951, lng: -77.0369 }, src: 'https://a.cdn-hotels.com/gdcs/production199/d559/b7eb5778-e405-4471-b16b-51f382862621.jpg?impolicy=fcrop&w=800&h=533&q=medium', link: 'https://youtu.be/Jv2cG_-yfxA?si=yBlhxRAkYJ4SA7vx' },
+    // Pakistan
+    { location: { lat: 30.3753, lng: 69.3451 }, src: 'https://i.natgeofe.com/n/95e0a142-5cda-40e4-b89c-040f286da03f/kaghan-valley-swat-pakistan.jpg', link: 'https://youtu.be/C1VOJql0sRg?si=U8VnF-mkUCbkYdYO' },
+    // Egypt
+    { location: { lat: 26.8206, lng: 30.8025 }, src: 'https://www.state.gov/wp-content/uploads/2023/07/shutterstock_1037036482v2.jpg', link: 'https://youtu.be/WuwXaTIWSz4?si=pOZyuh26HAhrnoG_' },
+    // Los Angeles
+    { location: { lat: 34.0522, lng: -118.2437 }, src: 'https://www.nationsonline.org/gallery/USA/Hollywood-sign.jpg', link: 'https://youtu.be/QRqFatBOcZE?si=7OAe8ZB_MVpOTmcR' },
+    // Hawaii
+    { location: { lat: 21.3069, lng: -157.8583 }, src: 'https://wpcdn.us-east-1.vip.tn-cloud.net/www.hawaiimagazine.com/content/uploads/2022/04/g/r/kaanapali-beach-scaled.jpg', link: 'https://youtu.be/z40nq88w-1I?si=px4aIbpQY0XfpudI' },
+        // // Austria
+        // { location: { lat: 47.5162, lng: 14.5501 }, src: 'https://www.example.com/austria.jpg', link: 'https://www.example.com/austria' },
+        // // Bosnia
+        // { location: { lat: 43.9159, lng: 17.6791 }, src: 'https://www.example.com/bosnia.jpg', link: 'https://www.example.com/bosnia' },
+        // // Maldives
+        // { location: { lat: 3.2028, lng: 73.2207 }, src: 'https://www.example.com/maldives.jpg', link: 'https://www.example.com/maldives' },
+        // // Brazil
+        // { location: { lat: -14.2350, lng: -51.9253 }, src: 'https://www.example.com/brazil.jpg', link: 'https://www.example.com/brazil' },
+        // // Mexico
+        // { location: { lat: 23.6345, lng: -102.5528 }, src: 'https://www.example.com/mexico.jpg', link: 'https://www.example.com/mexico' },
+        //  // Malaysia (Kuala Lumpur)
+        //  { location: { lat: 3.1390, lng: 101.6869 }, src: 'https://www.example.com/malaysia.jpg', link: 'https://www.example.com/malaysia' },
+        //  // Cuba
+        // { location: { lat: 21.5218, lng: -77.7812 }, src: 'https://www.example.com/cuba.jpg', link: 'https://www.example.com/cuba' },
+        // // Holland (Netherlands)
+        // { location: { lat: 52.3676, lng: 4.9041 }, src: 'https://www.example.com/holland.jpg', link: 'https://www.example.com/holland' }
+
+];
+
 
             myearth.addEventListener("ready", function () {
                 // add photo overlay with a link
@@ -431,7 +510,7 @@ Autem voluptas alias nobis in odit." loading="lazy" data-w-id="42d533b0-c21f-828
                                             </div>
                                         </div>
                                         <div class="column-2 w-col w-col-6" style="width: 83%;">
-                                            <div class="hero-split features-image"><img loading="lazy" alt="We Got To Know This Culture" src="../raviimages/snapinsta (26).jpeg" sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, 46vw"
+                                            <div class="hero-split features-image"><img loading="lazy" alt="We Got To Know This Culture" src="https://lh3.googleusercontent.com/pw/ADCreHfoEKO04A5M2JJmsA3vDqZh0dzibf0LjNp_1NyR4DsFrO-OS5U0V49qAB1A37hDklsoi4cTzezTLbYbV68AH7qZWdQ6RJssBM5-J_f1BLIgtHsm3guy=w2400" sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, 46vw"
                                                     srcset="../raviimages/snapinsta (26).jpeg 500w, ../raviimages/snapinsta (26).jpeg 800w, ../raviimages/snapinsta (26).jpeg 1080w, ../raviimages/snapinsta (26).jpeg 1600w, ../raviimages/snapinsta (26).jpeg 2017w"
                                                     class="features-image-right" /></div>
                                         </div>
@@ -466,7 +545,7 @@ Autem voluptas alias nobis in odit." loading="lazy" data-w-id="42d533b0-c21f-828
                                         </div>
                                         <div class="column-2 w-col w-col-6" style="width: 83%;">
                                             <div class="hero-split features-image">
-                                                <iframe width="450" height="400" style="border-radius: 15px;" src="https://www.youtube.com/embed/vQI42NmefX0" title="Afghanistan friends tho Mega Star song | Chiru Songs in Iraq Afghanistan 🇦🇫| Ravi Telugu Traveller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                                <iframe width="420" height="350" style="border-radius: 15px;" src="https://www.youtube.com/embed/vQI42NmefX0" title="Afghanistan friends tho Mega Star song | Chiru Songs in Iraq Afghanistan 🇦🇫| Ravi Telugu Traveller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                                                 </iframe>
                                                 </div>
                                                     
@@ -499,7 +578,7 @@ Autem voluptas alias nobis in odit." loading="lazy" data-w-id="42d533b0-c21f-828
                                         </div>
                                         <div class="column-2 w-col w-col-6">
                                             <div class="hero-split features-image">
-                                                <iframe width="450" height="400" src="https://www.youtube.com/embed/OzfvpTEQNwA" title="Luxury Night Boats in Africa | Overnight Lake Kivu | Gorilla Tour in Congo | Ravi Telugu Traveller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <iframe width="397" height="350" src="https://www.youtube.com/embed/OzfvpTEQNwA" title="Luxury Night Boats in Africa | Overnight Lake Kivu | Gorilla Tour in Congo | Ravi Telugu Traveller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                                 </div>
                                                     
                                         </div>
@@ -533,7 +612,7 @@ Autem voluptas alias nobis in odit." loading="lazy" data-w-id="42d533b0-c21f-828
                                         </div>
                                         <div class="column-2 w-col w-col-6">
                                             <div class="hero-split features-image">
-                                                <iframe width="450" height="400" style="border-radius: 40px;" src="https://www.youtube.com/embed/x8qyMBDRY8g" title="Telugu Traveler Ravi Exclusive Interview | Travel Vlogs | Telugu Vlogs |@SakshiTV​" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <iframe width="420" height="350" style="border-radius: 40px;" src="https://www.youtube.com/embed/x8qyMBDRY8g" title="Telugu Traveler Ravi Exclusive Interview | Travel Vlogs | Telugu Vlogs |@SakshiTV​" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                             </div>
                                         </div>
                                     </div>
@@ -560,7 +639,7 @@ Autem voluptas alias nobis in odit." loading="lazy" data-w-id="42d533b0-c21f-828
                                         <div data-w-id="41d59b58-25e4-61b1-8e86-73db7f8d5904" class="slider-text">
                                             <div class="paragraph-big slider-paragraph">- I want to discover -<em></em><br/></div>
                                             <div class="heading-jumbo slider-heading">Africa</div>
-                                            <a href="/destinations/africa" class="button transparent-white w-inline-block">
+                                            <a href="https://youtu.be/PwsZ7mnjH7Y?si=5DjF2omLXU03o4J1" class="button transparent-white w-inline-block">
                                                 <div>Discover NOW</div>
                                             </a>
                                         </div>
@@ -576,8 +655,8 @@ Autem voluptas alias nobis in odit." loading="lazy" data-w-id="42d533b0-c21f-828
                                     <div class="slider-content">
                                         <div data-w-id="34707026-554b-6e79-8a76-840b28666051" class="slider-text">
                                             <div class="paragraph-big slider-paragraph">- I want to discover -<em></em><br/></div>
-                                            <div class="heading-jumbo slider-heading">India</div>
-                                            <a href="/destinations/india" class="button transparent-white w-inline-block">
+                                            <div class="heading-jumbo slider-heading">Egypt</div>
+                                            <a href="https://youtu.be/uJ97MxBs4qU?si=fSllSpw-yy8XOxDB" class="button transparent-white w-inline-block">
                                                 <div>Discover NOW</div>
                                             </a>
                                         </div>
@@ -593,8 +672,8 @@ Autem voluptas alias nobis in odit." loading="lazy" data-w-id="42d533b0-c21f-828
                                     <div class="slider-content">
                                         <div data-w-id="df6faf8e-2436-91a7-412b-bea740d8f1c4" class="slider-text">
                                             <div class="paragraph-big slider-paragraph">- I want to discover -<em></em><br/></div>
-                                            <div class="heading-jumbo slider-heading">Amazonia</div>
-                                            <a href="/destinations/amazonia" class="button transparent-white w-inline-block">
+                                            <div class="heading-jumbo slider-heading">Grand Canyon</div>
+                                            <a href="https://youtu.be/ZrCno99X6oc?si=21YzL374WJMhX05z" class="button transparent-white w-inline-block">
                                                 <div>Discover NOW</div>
                                             </a>
                                         </div>
@@ -629,14 +708,14 @@ Autem voluptas alias nobis in odit." loading="lazy" data-w-id="42d533b0-c21f-828
                             <div class="contact-data">
                                 <div class="orange-heading-wrapper">
                                     <p class="contact-text-heading">Call us:</p>
-                                </div><a href="#" class="contact-text">+44 600 000 000</a></div>
+                                </div><a href="#" class="contact-text"></a></div>
                         </div>
                         <div class="email-info">
                             <div class="contact-icon"><img src="https://uploads-ssl.webflow.com/63581d2d6f71d47f01fbd733/637a530cb32209739a3e7295_mail%20(1).svg" loading="lazy" alt="" /></div>
                             <div class="contact-data">
                                 <div class="orange-heading-wrapper">
                                     <p class="contact-text-heading">Send e-mail:</p>
-                                </div><a href="#" class="contact-text">norra@example.com</a></div>
+                                </div><a href="#" class="contact-text"></a></div>
                         </div>
                         <div class="address-info">
                             <div class="contact-icon"><img src="https://uploads-ssl.webflow.com/63581d2d6f71d47f01fbd733/637a55b6a69b500729fa48b0_tool%20(2).svg" loading="lazy" alt="" /></div>
@@ -644,7 +723,7 @@ Autem voluptas alias nobis in odit." loading="lazy" data-w-id="42d533b0-c21f-828
                                 <div class="orange-heading-wrapper">
                                     <p class="contact-text-heading">Visit us:</p>
                                 </div>
-                                <div class="contact-text">R. Amauri, 513 - Itaim Bibi, <br/>São Paulo, <strong>BraSIL</strong></div>
+                                <div class="contact-text"></strong></div>
                             </div>
                         </div>
                     </div>
@@ -667,7 +746,7 @@ Autem voluptas alias nobis in odit." loading="lazy" data-w-id="42d533b0-c21f-828
                     <div data-w-id="9679b927-537d-ffb7-c10a-3f3c425f367f" class="hero-wrapper">
                         <div class="newsletter-content">
                             <h2 class="heading h2">Join our <em>newsletter</em> <br/>to stay up to date</h2>
-                            <p class="paragraph-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum.</p>
+                            <p class="paragraph-small"></p>
                             <div class="hero-form w-form"  >
                                 <form id="wf-form-Hero-Form" name="wf-form-Hero-Form" data-name="Hero Form" method="get" class="hero-form-container" data-wf-page-id="63bfc8a2ecb9a159daac10be" data-wf-element-id="9679b927-537d-ffb7-c10a-3f3c425f368b"><input type="text" class="hero-form-input w-input" maxlength="256" name="Hero-Email-2" data-name="Hero Email 2" aria-label="Enter your email" placeholder="Enter your email" id="Hero-Email-2" required=""  /><input type="submit" 
                                         value="Subscribe" data-wait="Please wait..." class="button-primary w-button" />
@@ -691,7 +770,6 @@ Autem voluptas alias nobis in odit." loading="lazy" data-w-id="42d533b0-c21f-828
                                 </div>
                             </div>
                             <div class="subscribe-agree">
-                                <div class="paragraph-extra-small">I agree with Norra</div>
                                 <a href="#" class="text-link-arrow w-inline-block">
                                     <div class="body-text">Privacy Policy</div>
                                     <div class="arrow-embed w-embed"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
